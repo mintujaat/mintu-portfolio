@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mintu Kumar - Digital Resume</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+    <div class="svg-background">
+  <svg viewBox="0 0 1440 320">
+    <path fill="#2b5876" fill-opacity="1" d="M0,96L48,122.7C96,149,192,203,288,202.7C384,203,480,149,576,128C672,107,768,117,864,128C960,139,1056,149,1152,160C1248,171,1344,181,1392,186.7L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+  </svg>
+</div>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<div data-aos="fade-up">
+  <h2></h2>
+  <!-- your projects -->
+</div>
+
+<div data-aos="zoom-in">
+  <h2></h2>
+  <!-- your contact info -->
+</div>
+
+  <!-- SVG Background -->
+  <div class="svg-bg"></div>
+
+  <!-- Dark Mode Toggle -->
+  <div class="toggle-container">
+    <input type="checkbox" id="darkToggle" />
+    <label for="darkToggle">🌙</label>
+  </div>
+
+  <!-- Language Switch -->
+  <select id="lang-switch">
+    <option value="en" selected>English</option>
+    <option value="hi">हिंदी</option>
+  </select>
+
+  <!-- 3-dot menu -->
+  <div class="menu">
+    <i class="fas fa-ellipsis-v" onclick="toggleMenu()"></i>
+    <ul id="menuList">
+      <li><a href="#about">View Resume</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div> 
+
+  <!-- Hero Section -->
+  <section class="hero blast-in">
+    <div class="hero-image">
+        <img src="mintupic.jpg" alt="mintu photo" class="profile-photo"/>
+    </div>
+    <h1 class="typing" id="typedText">Hello, I'm Mintu Kumar</h1>
+    <p>Web Developer | App Developer | Digital Creator</p>
+    <a href="#" onclick="window.print()">🖨 Print Resume</a>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>Skills</h2>
+    <div class="skill"><label>HTML</label><div class="bar"><div style="width: 95%"></div></div></div>
+    <div class="skill"><label>CSS</label><div class="bar"><div style="width: 90%"></div></div></div>
+    <div class="skill"><label>JavaScript</label><div class="bar"><div style="width: 85%"></div></div></div>
+    <div class="skill"><label>Firebase</label><div class="bar"><div style="width: 90%"></div></div></div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li>Aurorix - E-commerce website</li>
+      <li>Plustalk - Telegram-style Chat App</li>
+      <li>GST Billing App</li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>📧 busyjaat4@gmail.com</p>
+    <p>🔗 <a href="https://github.com/mintujaat-dev" target="_blank">GitHub</a> | <a href="https://instagram.com/mintu_dalal_85" target="_blank">Instagram</a></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
